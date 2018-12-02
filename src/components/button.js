@@ -4,13 +4,13 @@ import React, { Component } from 'react';
 
 class Button extends Component {
 
-	_onClick(event){
-		this.props.add(this.props.value)
-	}
+  _onClick(event){
+    this.props.add(this.props.value)
+  }
   render() {
     return (
       <div className={"item"+this.props.id} onClick={(event) => this._onClick(event)} >
-        	{this.props.value}
+          {this.props.value}
       </div>
     );
   }
